@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="300" prefWidth="500" stylesheets="@../theme/Darcula.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.LoginController">
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+          <HBox alignment="CENTER" prefHeight="75.0" prefWidth="500.0" spacing="15.0" BorderPane.alignment="CENTER">
+              <children>
+                  <VBox alignment="CENTER" prefHeight="120.0" prefWidth="170.0" spacing="10.0">
+                      <children>
+                          <TextField fx:id="id_input" prefHeight="30.0" promptText="ID" />
+                          <PasswordField fx:id="pw_input" onAction="#Login" prefHeight="30.0" promptText="PW" />
+                      </children></VBox>
+                  <Button mnemonicParsing="false" onAction="#Login" prefHeight="70.0" prefWidth="70.0" styleClass="MonoplexKR" text="로그인">
+                  </Button>
+              </children>
+          </HBox>
+         <Label fx:id="status" alignment="CENTER" text="*ID및 PW를 확인해주세요" textFill="RED" visible="false">
+            <VBox.margin>
+               <Insets left="125.0" />
+            </VBox.margin></Label>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

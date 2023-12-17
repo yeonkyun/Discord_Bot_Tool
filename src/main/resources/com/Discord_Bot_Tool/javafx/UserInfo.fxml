@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="250.0" prefWidth="330.0" stylesheets="@../theme/Darcula.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.UserInfoController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="닉네임">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UsernameField" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="이메일">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EmailField" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="고유ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UserIDField" onAction="#handleConfirmAction" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="40.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="250.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ConfirmBtn" mnemonicParsing="false" onAction="#handleConfirmAction" prefHeight="30.0" prefWidth="70.0" text="확인" />
+            <Button fx:id="CancelBtn" mnemonicParsing="false" onAction="#handleCancelAction" prefHeight="30.0" prefWidth="70.0" text="취소" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

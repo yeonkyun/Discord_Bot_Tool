@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.DBController">
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <content>
+                <TableView fx:id="UsersTable" prefHeight="570.0" prefWidth="370.0">
+                    <columns>
+                        <TableColumn fx:id="UsernameCol" text="닉네임" />
+                        <TableColumn fx:id="EmailCol" text="이메일" />
+                        <TableColumn fx:id="UserIDCol" text="유저ID" />
+                        <TableColumn fx:id="AuthordateCol" text="등록일자" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="570.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="SaveBtn" disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="저장" visible="false">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+                <Button fx:id="AddBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="추가" />
+                <Button fx:id="ModBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="수정" />
+                <Button fx:id="DelBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="삭제">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+                <Button fx:id="RefBtn" mnemonicParsing="false" prefHeight="25.0" text="🔄" />
+            </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="570" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.HomeController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="StartBotBtn" mnemonicParsing="false" onAction="#handleStartBotBtn" prefHeight="40.0" prefWidth="80.0" text="봇 실행" />
+                        <Button fx:id="StopBotBtn" disable="true" mnemonicParsing="false" onAction="#handleStopBotBtn" prefHeight="40.0" prefWidth="80.0" text="봇 종료" />
+                        <Button fx:id="RestartBotBtn" disable="true" mnemonicParsing="false" onAction="#handleRestartBotBtn" prefHeight="40.0" prefWidth="80.0" text="봇 재시작" />
+                    </children>
+                </HBox>
+                <Button fx:id="StopProgramBtn" mnemonicParsing="false" onAction="#StopProgram" prefHeight="40.0" prefWidth="340.0" text="프로그램 종료" />
+            </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+        </VBox>
+    </center>
+   <bottom>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" />
+         </BorderPane.margin>
+         <image>
+            <Image url="@/com/Discord_Bot_Tool/image/SMU(B).png" />
+         </image></ImageView>
+   </bottom>
+</BorderPane>

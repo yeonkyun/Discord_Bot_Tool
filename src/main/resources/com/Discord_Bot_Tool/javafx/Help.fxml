@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="570" stylesheets="@../theme/Darcula.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.HelpController">
+   <top>
+      <HBox alignment="CENTER" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/com/Discord_Bot_Tool/image/IntelliJ_IDEA_Icon.svg.png" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/com/Discord_Bot_Tool/image/discord-mark-blue.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/com/Discord_Bot_Tool/image/github-mark.png" />
+               </image></ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets top="70.0" />
+         </BorderPane.margin></HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="label-size-48px-bold" text="Discord Bot Tool">
+               <font>
+                  <Font name="Courier New Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="161.0" styleClass="label-size-14px" text="Build  Java Developer Kit 19 ㅣ Version 1.0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="113.0" />
+            <Label layoutX="295.0" layoutY="86.0" />
+            <Label layoutX="295.0" layoutY="159.0" styleClass="label-size-12px" text="본 툴은 디스코드 봇을 실행 및 종료하고 유저들의 데이터를 관리하는 툴 입니다." />
+            <Label layoutX="295.0" layoutY="85.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label styleClass="label-size-14px" text="Github">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="github" styleClass="label-size-14px" text="https://github.com/yeonkyun" />
+               </children>
+            </HBox>
+            <Label layoutX="281.0" layoutY="175.0" styleClass="label-size-14px" text="Discord 세균#4060">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="100.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

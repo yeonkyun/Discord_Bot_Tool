@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="400" minWidth="600" stylesheets="@../theme/Darcula.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Discord_Bot_Tool.javafx.MainController">
+    <children>
+        <TabPane fx:id="MainTabPane" prefHeight="400.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMinWidth="40.0">
+            <tabs>
+                <Tab fx:id="HomeTab" closable="false" text="Home">
+                    <content>
+                        <fx:include source="Home.fxml" />
+                    </content>
+                </Tab>
+                <Tab fx:id="DBTab" closable="false" text="DataBase">
+                    <content>
+                        <fx:include source="DB.fxml" />
+                    </content>
+                </Tab>
+                <Tab fx:id="LogTab" closable="false" text="Log">
+                <content>
+                    <fx:include source="Log.fxml" />
+                </content>
+                </Tab>
+                <Tab fx:id="HelpTab" closable="false" text="Help">
+                    <content>
+                        <fx:include source="Help.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TabPane>
+    </children>
+</AnchorPane>

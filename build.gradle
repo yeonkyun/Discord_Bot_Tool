@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '2.25.0'
+}
+
+group = 'com.Discord_Bot'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainModule = 'com.Discord_Bot_Tool.javafx'
+    mainClassName = 'com.Discord_Bot_Tool.javafx.MainApplication'
+}
+
+javafx {
+    version = '21.0.1'
+    modules = [ 'javafx.base', 'javafx.controls', 'javafx.fxml', 'javafx.graphics' ]
+}
+
+dependencies {
+    implementation 'net.dv8tion:JDA:5.0.0-beta.16'
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'ch.qos.logback:logback-classic:1.4.13'
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
